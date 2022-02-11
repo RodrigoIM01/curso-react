@@ -9,7 +9,7 @@ function useCategoriesData () {
 
   useEffect(function () {
     setLoading(true)
-    window.fetch('https://petgram-server-app-brom0pzuw-rodrigoim01.vercel.app/categories')
+    window.fetch('#')
       .then(res => res.json())
       .then(response => {
         setCategories(response)

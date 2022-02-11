@@ -4,10 +4,11 @@
   "description": "App muestra fotografías de animales por categorías",
   "main": "index.js",
   "scripts": {
-    "vercel-build": "yum install libuuid-devel libmount-devel zlib && cp /lib64/{libuuid,libmount,libblkid,libz}.so.1 node_modules/canvas/build/Release/",
+    "vercel-build": "npm run build",
     "build": "[webpack] build --output public",
     "lint": "standard",
-    "dev": "webpack-dev-server",
+    "dev": "webpack-dev-server --history-api-fallback",
+    "serve:dev": "webpack --mode 'development' && npx serve dist -s",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
