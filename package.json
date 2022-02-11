@@ -4,7 +4,7 @@
   "description": "App muestra fotografías de animales por categorías",
   "main": "index.js",
   "scripts": {
-    "vercel-build": "npm run build",
+    "vercel-build": "npm run vercel-build",
     "build": "[webpack] build --output public",
     "lint": "standard",
     "dev": "webpack-dev-server --history-api-fallback",
